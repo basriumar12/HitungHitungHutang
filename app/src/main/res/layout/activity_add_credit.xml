@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/blue_bg_header"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="@drawable/edittext_rounded_corners"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HUTANG"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <ImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:src="@android:drawable/divider_horizontal_dim_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="2dp"
+            android:background="#000000"
+            android:paddingTop="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pelanggan : "/>
+
+            <TextView
+                android:id="@+id/cre_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Nama"/>
+
+            <TextView
+                android:id="@+id/cre_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+        <TextView
+            android:text="Jumlah Hutang"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/txt_credit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Isi Jumlah Hutang Customer "
+            android:inputType="number"
+            android:maxLength="9"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textColor="@android:color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/date_credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/tgl"
+                android:hint="Tanggal"
+                android:editable="false"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/tgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:text="@string/date"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@android:color/transparent"/>
+
+            </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_credit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="2dp"
+        android:text="Simpan"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:background="@drawable/redbutton"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>

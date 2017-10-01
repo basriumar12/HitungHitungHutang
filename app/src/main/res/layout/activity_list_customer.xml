@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/txt_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/blue_bg_header"
+        android:gravity="center"
+        android:text="@string/all_customer"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
+
+    <ImageButton
+        android:id="@+id/btn_add_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/button_add" />
+
+    <TextView
+        android:id="@+id/txt_empty_list_customers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="4dp"
+        android:gravity="center"
+        android:text="@string/no_company_in_the_database_create_new_one_by_clicking_the_add_button_at_the_top_right"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textColor="@android:color/darker_gray"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/list_customer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_header"
+        android:layout_margin="4dp"
+        android:divider="@android:drawable/divider_horizontal_bright"
+        android:dividerHeight="0.5dp"
+        tools:listitem="@layout/list_item_customer"
+        android:listSelector="@drawable/list_color" />
+
+</RelativeLayout>

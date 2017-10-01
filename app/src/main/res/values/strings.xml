@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Bon</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="copyright">© tiyanrcode 2015</string>
+    <string name="action_new">Tambah Pelanggan</string>
+    <string name="all_customer">Daftar Pelanggan</string>
+    <string name="date">Tanggal</string>
+    <string name="no_company_in_the_database_create_new_one_by_clicking_the_add_button_at_the_top_right">Tidak ada pelanggan. Buat baru dengan klik tombol (plus) pojok kanan</string>
+
+</resources>
